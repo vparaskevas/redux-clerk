@@ -31,15 +31,15 @@ const generateActionName = (...parts) => {
  */
 export const generateActionNames = (prefix, type) => {
   return {
-    startPre: generateActionName(prefix, type, 'pre'),
+    //startPre: generateActionName(prefix, type, 'pre'),
     start: generateActionName(prefix, type),
-    startPost: generateActionName(prefix, type, 'post'),
-    successPre: generateActionName(prefix, type, 'success', 'pre'),
+    //startPost: generateActionName(prefix, type, 'post'),
+    //successPre: generateActionName(prefix, type, 'success', 'pre'),
     success: generateActionName(prefix, type, 'success'),
-    successPost: generateActionName(prefix, type, 'success', 'post'),
-    errorPre: generateActionName(prefix, type, 'error', 'pre'),
+    //successPost: generateActionName(prefix, type, 'success', 'post'),
+    //errorPre: generateActionName(prefix, type, 'error', 'pre'),
     error: generateActionName(prefix, type, 'error'),
-    errorPost: generateActionName(prefix, type, 'error', 'post'),
+    //errorPost: generateActionName(prefix, type, 'error', 'post'),
   }
 }
 
