@@ -58,9 +58,9 @@ class BaseAction {
    * @returns {void}
    */
   start = (...args) => {
-    this._dispatch('startPre', ...args)
+    //this._dispatch('startPre', ...args)
     this._dispatch('start', ...args)
-    this._dispatch('startPost', ...args)
+    //this._dispatch('startPost', ...args)
   }
 
   /**
@@ -70,9 +70,9 @@ class BaseAction {
    * @returns {void}
    */
   success = (...args) => {
-    this._dispatch('successPre', ...args)
+    //this._dispatch('successPre', ...args)
     this._dispatch('success', ...args)
-    this._dispatch('successPost', ...args)
+    //this._dispatch('successPost', ...args)
   }
 
   /**
@@ -82,9 +82,9 @@ class BaseAction {
    * @returns {void}
    */
   error = (...args) => {
-    this._dispatch('errorPre', ...args)
+    //this._dispatch('errorPre', ...args)
     this._dispatch('error', ...args)
-    this._dispatch('errorPost', ...args)
+    //this._dispatch('errorPost', ...args)
   }
 }
 
